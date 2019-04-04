@@ -23,7 +23,7 @@
 SCRIPT_PATH='/data' 
  
 getip() { 
-        IP=`curl 4.ifcfg.me` 
+        IP=`curl -4 ifconfig.co` 
         OLDIP=`dig +short ${DYNHOST_DOMAIN_NAME}` 
     } 
  
